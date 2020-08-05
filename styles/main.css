@@ -35,10 +35,9 @@
 
 #container {
     /* box model */
-    border: 1px solid red;
-    padding: 10px 40px 60px 2px; /* preenchimento */
-    margin: 40px; /* margens externas */
-
+    /*border: 1px solid red;*/
+    /*padding: 10px 40px 60px 2px; /* preenchimento */
+    /*margin: 40px; /* margens externas */
     width: 90vw; /* width = largura */
     max-width: 700px; /* height = altura */
 }
@@ -73,4 +72,10 @@ textarea {
     font-size: 1.6rem;
 
     color: var(--color-text-base);
+}
+
+@media (min-width: 700px) {
+    :root {
+        font-size: 62.5%; /*todo 1rem será relativo a 10px */
+    }
 }
